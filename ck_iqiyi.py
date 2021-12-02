@@ -11,7 +11,7 @@ from urllib.parse import unquote
 
 import requests
 
-from notify_mtr import send
+#from notify_mtr import send
 from utils import get_data
 
 
@@ -228,7 +228,7 @@ def start():
     data = get_data()
     _check_items = data.get("IQIYI", [])
     res = IQIYI(check_items=_check_items).main()
-    send("爱奇艺", res)
+    #send("爱奇艺", res)
 
 
 if __name__ == "__main__":
